@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Controle de gastos </title>
+        <meta charset= "UTF-8">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" type="text/css" href="controlegastos.css">
+    </head>
+    
+    <body>
+        <main>
+            <section class="secao_informacoes">
+                <h1>Controle de gastos</h1>
+                <div class="entrada_orcamento">
+                    <h2>Total Orçamento</h2>
+                    <input type="text">
+                    <button>Calcular</button>
+                </div>
+                <div class="entrada_despesa">
+                    <h2>Nome despesa</h2>
+                    <input type="text" class="entrada_despesa_nome">
+                    
+                    <h2>Valor despesa</h2>
+                    <input type="number" class="entrada_despesa_valor">
+                    
+                    <button>Enviar despesa</button>
+                </div>
+                <div class="container_despesas">
+                    <div class="container_cabecalho">
+                        <p class ="tituloDespesa">Titulo despesa</p>
+                        <p>Valor despesa</p>
+                    </div>
+                    <ul class="despesas_lista">
+                        <li>
+                            <h3>Hotel</h3>
+                            <p>R$43</p>
+                            <img src="./lix.jpg" alt="Ícone lixeira">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="secao_resultados">
+                <div class="resultado_orcamento">
+                    <h3>Orçamento</h3>
+                    <p>R$0</p>
+                </div>
+                <div class="resultado_despesa">
+                    <h3>Despesa</h3>
+                    <p>R$0</p>
+                </div>
+                <div class="resultado_saldo">
+                    <h3>Saldo</h3>
+                    <p>R$0</p>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="controledegastos.js"></script>
+</html>
